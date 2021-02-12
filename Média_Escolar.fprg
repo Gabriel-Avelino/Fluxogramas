@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="gabri"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-01-07 01:45:56 "/>
+        <attribute name="created" value="Z2Ficmk7REVTS1RPUC1BQ0lGRkVUOzIwMjEtMDEtMDY7IjEwOjU1OjU4ICI7Mjc4OQ=="/>
+        <attribute name="edited" value="Z2Ficmk7REVTS1RPUC1BQ0lGRkVUOzIwMjEtMDEtMDc7IjAxOjQ1OjU2ICI7MjsyODk2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nome, sobrenome" type="String" array="False" size=""/>
+            <declare name="nota1, nota2, nota3, nota4, soma, media" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o nome do aluno: &quot;" newline="True"/>
+            <input variable="nome"/>
+            <output expression="&quot;Digite o sobrenome do aluno: &quot;" newline="False"/>
+            <input variable="sobrenome"/>
+            <output expression="&quot;Digite a primeira nota: &quot;" newline="True"/>
+            <input variable="nota1"/>
+            <output expression="&quot;Digite a segunda nota: &quot;" newline="True"/>
+            <input variable="nota2"/>
+            <output expression="&quot;Digite a terceira nota: &quot;" newline="True"/>
+            <input variable="nota3"/>
+            <output expression="&quot;Digite a quarta nota: &quot;" newline="True"/>
+            <input variable="nota4"/>
+            <output expression="&quot;Seu nome &#233;: &quot; &amp; nome &amp;&#13;&#10;&quot; Seu sobrenome &#233;: &quot; &amp; sobrenome" newline="True"/>
+            <assign variable="soma" expression="nota1+nota2+nota3+nota4"/>
+            <output expression="&quot;A soma de suas notas &#233;: &quot; &amp; soma" newline="True"/>
+            <assign variable="media" expression="soma/4"/>
+            <output expression="&quot;A m&#233;dia de suas notas &#233;: &quot; &amp; media" newline="True"/>
+            <if expression="media&gt;=7">
+                <then>
+                    <output expression="&quot;Parab&#233;ns, voc&#234; foi aprovado!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Infelizmente, voc&#234; foi reprovado!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
